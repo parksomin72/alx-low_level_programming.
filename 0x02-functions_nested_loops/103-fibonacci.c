@@ -1,25 +1,21 @@
 #include <stdio.h>
 /**
- * main - finds and prints the sum of the even-valued terms
- * followed by a new line
- * Return: Always 0 (Success)
+ * main -Print the sun of Even fibonacci numbers
+ * less than 4000000
+ * Return: Nothing!
  */
-int main(void)
+int main(viod)
 {
-int i;
-unsigned long int j, k, next, sum;
-j = 1;
-k = 2;
-sum = 0;
-for (i = 1; i <= 33; ++i)
+int i =0;
+log j =1, k =2, sum = k;
+while (k+j < 4000000)
 {
-if (j < 4000000 && (j % 2) == 0)
-{
-sum = sum + j;
+k += j;
+if (k % 2 == 0)
+sum += k;
+j = k - j;
+++i;
 }
-j = k;
-k = next;
-}
-printf("%lu\n", sum);
+printf("%ld\n", sum);
 return (0);
 }
