@@ -5,7 +5,7 @@
  * followed by a new line
  * Return: Always 0 (Success)
  */
-int main (void)
+int main(void)
 {
 int i;
 unsigned long int j;
@@ -15,7 +15,7 @@ unsigned long int sum;
 j = 1;
 k = 2;
 sum = 0;
-for (i =1; i <= 33; ++i)
+for (i = 1; i <= 33; ++i)
 {
 if(j < 4000000 && (j % 2) == 0)
 {
