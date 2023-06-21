@@ -1,41 +1,29 @@
-#include <stdio.h>
+#include <studio.h>
 /**
- * main - fibonacci <3
- *
- * Purpose - no hardcode
- *
- * Return:  (Success)
+ * main - finds and prints the sum of the even-valued terms
+ * followed by a new line
+ * Return: Always 0 (Success)
  */
-int main(void)
+int main (void)
 {
-unsigned long int i;
-unsigned long int bef = 1;
-unsigned long int aft = 2;
-unsigned long int l = 4000000;
-unsigned long int bef1;
-unsigned long int bef2;
-unsigned long int aft1;
-unsigned long int aft2;
-printf("%lu", bef);
-for (i = 1; i < 91; i++)
+int i;
+unsigned long int j;
+unsigned long int k;
+unsigned long int next;
+unsigned long int sum;
+j = 1;
+k = 2;
+sum = 0;
+for (i =1; i <= 33; ++i)
 {
-printf(", %lu", aft);
-aft += bef;
-bef = aft - bef;
+if(j < 4000000 && (j % 2) == 0)
+{
+sum = sum + j;
 }
-bef1 = (bef / l);
-bef2 = (bef % l);
-aft1 = (aft / l);
-aft2 = (aft % l);
-for (i = 92; i < 99; ++i)
-{
-printf(", %lu", aft1 + (aft2 / l));
-printf("%lu", aft2 % l);
-aft1 = aft1 + bef1;
-bef1 = aft1 - bef1;
-aft2 = aft2 + bef2;
-bef2 = aft2 - bef2;
+next = j + k;
+j = k;
+k = next;
 }
-printf("\n");
+printf("%lu\n", sum);
 return (0);
 }
