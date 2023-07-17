@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
- * _strlen -returns the length of a string
+ * int_strlen - returns the length of a string
  * @s: string to evaluate
  *
  * Return: the length of the string
@@ -27,14 +27,14 @@ return (i);
  */
 char *_strcpy(char *dest, char *src)
 {
-int len; 
+int len;
 int i;
 len = 0;
-while (src[len] != '\0');
+while (src[len] != '\0')
 {
 len++;
 }
-for (i =  0; i < len; i++)
+for (i = 0; i < len; i++)
 {
 dest[i] = src[i];
 }
@@ -49,20 +49,21 @@ return (dest);
  *
  * Return: pointer to the new dog (Success), NULL otherwise
  */
-struct dog_t *new_dog(char *name, float age, char *owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
-struct dog_t *dog;
-int len1, len2;
+dog_t *dog;
+int len1;
+int len2;
 len1 = int_strlen(name);
 len2 = int_strlen(owner);
 dog = malloc(sizeof(dog_t));
 if (dog == NULL)
 return (NULL);
-struct dog_t->name = malloc(sizeof(char) * (len1 + 1));
+dog->name = malloc(sizeof(char) * (len1 + 1));
 if (dog->name == NULL)
 {
 free(dog);
-free(NULL);
+return (NULL);
 }
 dog->owner = malloc(sizeof(char) * (len2 + 1));
 if (dog->owner == NULL)
