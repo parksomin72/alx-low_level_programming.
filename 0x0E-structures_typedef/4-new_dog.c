@@ -6,7 +6,7 @@
  *
  * Return: the length of the string
  */
-int_strlen(char *s)
+int int_strlen(char *s)
 {
 int i;
 i = 0;
@@ -27,9 +27,10 @@ return (i);
  */
 char *_strcpy(char *dest, char *src)
 {
-int len, i;
+int len; 
+int i;
 len = 0;
-while (src[len] != '\0';
+while (src[len] != '\0');
 {
 len++;
 }
@@ -48,16 +49,16 @@ return (dest);
  *
  * Return: pointer to the new dog (Success), NULL otherwise
  */
-dog_t *new_dog(char *name, float age, char *owner)
+struct dog_t *new_dog(char *name, float age, char *owner)
 {
-dog_t *dog;
+struct dog_t *dog;
 int len1, len2;
-len1 = _strlen(name);
-len2 = _strlen(owner);
+len1 = int_strlen(name);
+len2 = int_strlen(owner);
 dog = malloc(sizeof(dog_t));
 if (dog == NULL)
 return (NULL);
-dog->name = malloc(sizeof(char) * (len1 + 1));
+struct dog_t->name = malloc(sizeof(char) * (len1 + 1));
 if (dog->name == NULL)
 {
 free(dog);
