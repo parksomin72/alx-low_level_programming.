@@ -25,6 +25,10 @@ while (name[i])
 {
 if (name[i] >= 'a' && name[i] <= 'z')
 {
+putchar(name[i] + 'A' - 'a');
+}
+else
+{
 putchar(name[i]);
 }
 i++;
