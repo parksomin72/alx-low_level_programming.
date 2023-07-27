@@ -1,0 +1,7 @@
+
+_holberton.asm:2: Error: no such instruction: `extren printf'
+101-hello_holberton.asm:4: Error: too many memory references for `mov'
+101-hello_holberton.asm:5: Error: too many memory references for `xor'
+101-hello_holberton.asm:7: Error: too many memory references for `mov'
+101-hello_holberton.asm:9: Error: no such instruction: `db `Hello,Holberton\n`,0'
+root@2e99731d09bf:/alx-low_level_programming/0x12-singly_linked_lists# 
