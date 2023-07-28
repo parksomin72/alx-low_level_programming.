@@ -1,9 +1,13 @@
-global    main
-extern    printf
+section .data
+format db 'Hello, Holberton',0
+
+section .text
+global main
+extern printf
+
 main:
-mov   edi, format
-xor   eax
-call  print
-mov         eax, 0
+mov rdi, format
+xor rax, rax
+call printf
+xor rax, rax   ; Set return value to 0 (optional)
 ret
-format: db `Hello, Holberton\n`,0
