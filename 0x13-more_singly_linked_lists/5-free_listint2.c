@@ -15,5 +15,5 @@ next_node = current->next;
 free(current);
 current = next_node;
 }
-*head = NULL; // Set head to NULL after freeing all nodes
+*head = NULL;
 }
