@@ -16,5 +16,5 @@ data = temp->n;
 *head = (*head)->next;
 free(temp);
 }
-return data;
+return (data);
 }
