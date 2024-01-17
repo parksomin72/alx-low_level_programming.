@@ -30,6 +30,7 @@ low = pos + 1;
 else
 high = pos - 1;
 }
-printf("Value checked array[%lu] is out of range\n", low);
+printf("Value checked array[%lu] = [%d]\n", low, array[low]);
+printf("Value checked array[%lu] is out of range\n", size - 1);
 return (-1);
 }
