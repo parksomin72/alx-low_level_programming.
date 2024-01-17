@@ -1,1 +1,1 @@
-O(k) * O(n/k) = O(sqrt(n))
+O(sqrt(n))
