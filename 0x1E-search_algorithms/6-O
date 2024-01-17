@@ -1,1 +1,1 @@
-O(n * sizeof(int *) + n * m * sizeof(int))
+O(n * m)
