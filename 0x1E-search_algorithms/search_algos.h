@@ -6,34 +6,28 @@
 
 /* Definition of listint_t (assuming it's a linked list node) */
 /**
- * struct listint_s - singly linked list
- *
- * @n: Integer
- * @index: Index of the node in the list
- * @next: Pointer to the next node
- *
- * Description: singly linked list node structure
+ * struct listint_s - singly linked list node
+ * @n: Integer value stored in the node
+ * @next: Pointer to the next node in the list
  */
-typedef struct listint_s {
-    int n;
-    struct listint_s *next;
+typedef struct listint_s
+{
+int n;
+struct listint_s *next;
 } listint_t;
 
-/* Definition of skiplist_t */
+/* Definition of skiplist_s */
 /**
- * struct skiplist_s - Singly linked list with an express lane
- *
- * @n: Integer
- * @index: Index of the node in the list
- * @next: Pointer to the next node
+ * struct skiplist_s - singly linked list node with an express lane
+ * @n: Integer value stored in the node
+ * @next: Pointer to the next node in the list
  * @express: Pointer to the next node in the express lane
- *
- * Description: singly linked list node structure with an express lane
  */
-typedef struct skiplist_s {
-    int n;
-    struct skiplist_s *next;
-    struct skiplist_s *express;
+typedef struct skiplist_s
+{
+int n;
+struct skiplist_s *next;
+struct skiplist_s *express;
 } skiplist_t;
 
 /* Function prototypes */
