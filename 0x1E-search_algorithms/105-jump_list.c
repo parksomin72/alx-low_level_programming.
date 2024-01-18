@@ -1,6 +1,8 @@
 #include "search_algos.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
+
 /**
  * jump_list - Searching for an algorithm in a sorted singly
  *             linked list of integers using jump search.
