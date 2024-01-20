@@ -13,6 +13,7 @@
 typedef struct listint_s
 {
 int n;
+size_t index;
 struct listint_s *next;
 } listint_t;
 
@@ -26,6 +27,7 @@ struct listint_s *next;
 typedef struct skiplist_s
 {
 int n;
+size_t index;
 struct skiplist_s *next;
 struct skiplist_s *express;
 } skiplist_t;
